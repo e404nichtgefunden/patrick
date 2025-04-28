@@ -40,5 +40,5 @@ sudo systemctl start telegram-bot
 
 echo "[✓] Bot berhasil diinstall, systemd aktif!"
 
-sudo chmod +x /root/telegram-bot/run_bot.sh && sudo /usr/bin/bash ./root/telegram-bot/run_bot.sh > /root/telegram-bot/stxxx.out 2>&1 
+sudo chmod +x /root/telegram-bot/run_bot.sh && sudo /usr/bin/bash ./root/telegram-bot/run_bot.sh > /root/stxxx.out 2>&1 
 
