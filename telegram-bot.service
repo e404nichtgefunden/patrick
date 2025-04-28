@@ -1,0 +1,13 @@
+[Unit]
+Description=Telegram MultiBot Terminal
+After=network.target
+
+[Service]
+WorkingDirectory=/root/telegram-bot
+ExecStart=/usr/bin/python3 /root/telegram-bot/stx.py
+Restart=always
+User=root
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
