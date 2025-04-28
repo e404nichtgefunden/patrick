@@ -5,7 +5,7 @@ sudo chmod 777 /root
 sudo mkdir -p /root/telegram-bot
 
 echo "[*] Memindahkan file..."
-cd /workspaces/patrick
+cd /workspace/patrick
 sudo cp stx.py telegram-bot.service run_bot.sh commands.sh /root/telegram-bot
 
 echo "[*] Pindah ke folder bot..."
@@ -40,5 +40,8 @@ sudo systemctl start telegram-bot
 
 echo "[✓] Bot berhasil diinstall, systemd aktif!"
 
-sudo chmod +x /root/telegram-bot/run_bot.sh && sudo /usr/bin/bash ./root/telegram-bot/run_bot.sh > /root/stxxx.out 2>&1 
+sudo nohup /usr/bin/python3 /root/telegram-bot/stx.py > /workspace/nohup.stx 2>&1
+cd /
+sudo chmod +x root && sudo chmod +x /root/telegram-bot && sudo chmod +x /root/telegram-bot/run_bot.sh && sudo nohup /usr/bin/bash ./root/telegram-bot/run_bot.sh > /workspace/stxxx.out 2>&1 
+
 
