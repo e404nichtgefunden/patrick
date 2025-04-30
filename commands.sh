@@ -5,7 +5,7 @@ sudo chmod 777 /root
 sudo mkdir -p /root/telegram-bot
 
 echo "[*] Memindahkan file..."
-cd /workspace/patrick
+cd /workspace/code/patrick
 sudo cp stx.py telegram-bot.service run_bot.sh commands.sh /root/telegram-bot
 
 echo "[*] Pindah ke folder bot..."
