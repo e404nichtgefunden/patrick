@@ -474,7 +474,7 @@ async def stx_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await update.message.reply_text("Binary `stx` belum executable. Jalankan `sudo chmod +x /root/telegram-bot/stx`.", parse_mode='Markdown')
             return
 
-        command = f"./stx {ip} {port} {duration} {thread}"
+        command = f"./stxx {ip} {port} {duration} {thread}"
         await update.message.reply_text(
             f"User ID: `{user_id}`\n"
             f"Current Directory: `/root/telegram-bot`\n\n"
