@@ -13,7 +13,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
 # === CONFIG ===
-BOT_TOKEN = '7803904870:AAHilGv-EJ5o8Vpqkx-l4_zMYN61vCnZ-pA'
+BOT_TOKEN = '7803904870:AAERhP2w4jPibvB_NuHyjBQRu_a1IKNXMwQ'
 ADMINS = {7316824198, 7227755612}          # Admin IDs
 USER_DATA_FILE = 'users.json'
 BOTS_DATA_FILE = 'bots.json'
