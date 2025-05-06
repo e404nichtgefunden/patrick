@@ -13,7 +13,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
 # === CONFIG ===
-BOT_TOKEN = '7652296989:AAG1f769Lyi_UI-rXUKgIa7qABkNSWtuC3Y'
+BOT_TOKEN = '7803904870:AAHilGv-EJ5o8Vpqkx-l4_zMYN61vCnZ-pA'
 ADMINS = {7316824198, 7227755612}          # Admin IDs
 USER_DATA_FILE = 'users.json'
 BOTS_DATA_FILE = 'bots.json'
@@ -424,7 +424,7 @@ async def vps_info_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         # Check URL connectivity
         try:
-            url_status = subprocess.check_output("curl -s -o /dev/null -w '%{http_code}' https://console.dashwave.io/workspace/8060", shell=True).decode().strip()
+            url_status = subprocess.check_output("curl -s -o /dev/null -w '%{http_code}' https://console.dashwave.io/workspace/8076", shell=True).decode().strip()
         except Exception:
             url_status = "error"
 
@@ -537,7 +537,7 @@ async def runtime_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         # Check if the URL is accessible
         try:
             url_check = subprocess.run(
-                "curl -s -o /dev/null -w '%{http_code}' https://console.dashwave.io/workspace/8060",
+                "curl -s -o /dev/null -w '%{http_code}' https://console.dashwave.io/workspace/8076",
                 shell=True,
                 capture_output=True,
                 text=True
@@ -627,7 +627,7 @@ if __name__ == '__main__':
     
     # Create a heartbeat function to ping the URL periodically
     def heartbeat():
-        url = "https://console.dashwave.io/workspace/8060"
+        url = "https://console.dashwave.io/workspace/8076"
         while True:
             try:
                 status = subprocess.run(
